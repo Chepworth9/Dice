@@ -3,10 +3,9 @@
         <script src="script.js"></script>
         <style type="text/css">
     div.dice{
-        float:left;
         width: 32px;
-        background-color: red;
-        border:#999 1px solid;
+        background-color: rgba(0, 255, 0, 0.317);
+        border:rgb(0, 0, 0) 1px solid;
         padding:10px;
         font-size: 24px;
         text-align: center;
@@ -16,8 +15,14 @@
     </head>
     <body>
         <button onclick="myfunction()">Press for random number!</button>
-        <div id="die1" class="dice">0</div>
-        <label for="diceSideInput"></label>
+        <label for="diceSideInput">number of sides</label>
         <input type="number" id="diceSideInput" name="diceSideInput" min="1" max="25">
+        <label for="diceNumberInput">number of dice</label>
+        <input type="number" id="diceNumberInput" name="diceNumberInput" min="1" max="25">
+        <div id="dicePouch">
+            <div id="die1" class="dice">0</div>
+        </div>
+        
     </body>
 </html>
+
